@@ -1,0 +1,15 @@
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\bin\Debug\BCA_MakingAnIA.exe.config
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\obj\Debug\BCA_MakingAnIA.csprojResolveAssemblyReference.cache
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\obj\Debug\BCA_MakingAnIA.Properties.Resources.resources
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\obj\Debug\BCA_MakingAnIA.csproj.GenerateResource.Cache
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\bin\Debug\BCA_MakingAnIA.exe
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\bin\Debug\BCA_MakingAnIA.pdb
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\obj\Debug\BCA_MakingAnIA.exe
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\obj\Debug\BCA_MakingAnIA.pdb
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\obj\Debug\Interop.WMPLib.dll
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\obj\Debug\BCA_MakingAnIA.csproj.ResolveComReference.cache
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\obj\Debug\BCA_MakingAnIA.FrmConsole.resources
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\obj\Debug\BCA_MakingAnIA.FrmPrincipal.resources
