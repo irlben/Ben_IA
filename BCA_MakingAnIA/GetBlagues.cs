@@ -10,10 +10,10 @@ namespace BCA_MakingAnIA
     {
         public class blagues
         {
-            public string id { get; set; }
-            public string q_blagues { get; set; }
-            public string r_blagues { get; set; }
-            public string categ { get; set; }
+            public string id { get; set; } // Récupération de l'ID
+            public string q_blagues { get; set; } // Récupération de la 'Question'
+            public string r_blagues { get; set; } // Récupération de la 'Réponse' souvent appelé chute
+            public string categ { get; set; } // Catégorie de la blague
         }
     }
 }

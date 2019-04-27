@@ -27,9 +27,7 @@ namespace BCA_MakingAnIA
         
         Boolean wake = false;
         Choices list = new Choices();
-        //ServiceController service = new ServiceController("SQL Server (MSSQLSERVER)", Environment.MachineName);
-        const string APPID = "14c4be5ed015bf3b8fb3886a0dcb724d";
-        //string cityID = "2982652"; 
+        const string APPID = "14c4be5ed015bf3b8fb3886a0dcb724d"; 
         #endregion
         
         public static void StartService(string serviceName, int timeoutMilliseconds)
@@ -51,12 +49,12 @@ namespace BCA_MakingAnIA
         {
             
             SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
-
+            // Ajout de commandes tels qu'Ouvrir Google Chrome (voir le fichier txt)
             list.Add(File.ReadAllLines(@"C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\Commands\Commands.txt"));
 
 
             
-
+            // Ajout d'une nouvelle grammaire
             Grammar gr = new Grammar(new GrammarBuilder(list));
            
 
@@ -105,11 +103,13 @@ namespace BCA_MakingAnIA
                 }
             }
         }
+        // Procédure pour dire en vocal ce qu'on veut
         public void say(String h)
         {
             s.Speak(h);
             TxtOutput.AppendText(h + "\n");
         }
+        // API permettant de récupérer les informations de la météo
         void getWeather(string city)
         {
             using (WebClient web = new WebClient())
@@ -130,13 +130,15 @@ namespace BCA_MakingAnIA
                
             }
         }
+        // Liste de nombre de 1 à 13
         int[] rdmnumber = new int[13] { 1,2,3,4,5,6,7,8,9,10,11,12,13 };
+        // Fonction permettant de donner un nombre aléatoirement
         public int rdm()
         {
             Random r = new Random();
             return rdmnumber[r.Next(13)];
         }
-        
+        // API permettant de récupérer des blagues 
         private void GetBlagues()
         {
             try
@@ -159,12 +161,13 @@ namespace BCA_MakingAnIA
         }
       
 
-
+        // Procédure permettant d'ouvrir une application
         private static void OpenAppli(string pName)
         {
             Process.Start(pName);
             
         }
+        // Procédure permettant de fermer des applications
         private static void CloseAppli(string pName)
         {
             foreach (var process in Process.GetProcessesByName(pName))
@@ -332,12 +335,14 @@ namespace BCA_MakingAnIA
                     CloseAppli("chrome");
                     end(r);
                 }
+                // Ouvrir CMD
                 if (r == "Ouvre le terminal")
                 {
                     say(fairerep_action());
                     OpenAppli(@"C:\WINDOWS\system32\cmd.exe");
                     end(r);
                 }
+                // Fermer CMD
                 if (r == "Ferme le terminal")
                 {
                     say(fairerep_action());
@@ -351,68 +356,78 @@ namespace BCA_MakingAnIA
                     OpenAppli(@"C:\Program Files (x86)\Google\Chrome\Application\Chrome.exe");
                     end(r);
                 }
-
+               
                 if (r == "On se revoie bientôt")
                 {
                     say("D'accord");
                     end(r);
                 }
+                // Ouvrir la calculatrice Windows
                 if (r == "Calculatrice" || r == "Calculette" || r == "Ouvre la Calculatrice")
                 {
                     OpenAppli("calc.exe");
                     end(r);
                 }
+                // Fermer la Calculatrice Windows
                 if (r == "Ferme Calculatrice")
                 {
                     say(fairerep_action());
                     CloseAppli("Calculator");
                     end(r);
                 }
+                // Mettre ce formulaire en icone
                 if (r == "Met toi en Icone")
                 {
                     say(fairerep_action());
                     this.WindowState = FormWindowState.Minimized;
                     end(r);
                 }
+                // Mettre ce formulaire en normal
                 if (r == "Met toi en Normal" || r == "Ouvre toi")
                 {
                     say(fairerep_action());
                     this.WindowState = FormWindowState.Normal;
                     end(r);
                 }
+                // Mettre ce formulaire en grand
                 if (r == "Met toi en Grand")
                 {
                     say(fairerep_action());
                     this.WindowState = FormWindowState.Maximized;
                     end(r);
                 }
-
+                // Démarrer les services SQL [OFF]
                 if (r == "Demarre les services SQL")
                 {
                     say(fairerep_action());
                     StartService("SQL Server(MSSQLSERVER)", 300);         
                     end(r);
                 }
+                // Récupérer les informations de la météo
                 if (r == "Quel temps fait il")
                 {
                     getWeather("2982652");
                     end(r);
                 }
+                // Création d'un mot de passe [OFF]
                 if (r == "J'ai besoin d'un mot de passe")
                 {
                     wake = false;
                    // mdp();
                 }
+                // Récupération des informations de l'API Blagues
                 if (r == "Raconte moi une blague")
                 {
                     GetBlagues();
                     end(r);
                 }
+                // Fermer le form Console
                 if (r == "Ferme la console")
                 {
                     FrmConsole.ActiveForm.Close();
                     end(r);
                 }
+                // Donner les informations que peut faire L'IA
                 if (r == "Que puis-je faire ?")
                 {
                     say("Vous pouvez me demander d'ouvrir une application tel que Google Chrome");
@@ -423,12 +438,12 @@ namespace BCA_MakingAnIA
                 }
             }
         }
-
+        
         private void Form1_Load(object sender, EventArgs e)
         {
-            BtnRec.BackColor = Color.Red;
+            BtnRec.BackColor = Color.Red; // Définir le bouton REC en rouge
         }
-
+        // Clique pour activer l'IA
         private void BtnRec_Click(object sender, EventArgs e)
         {
             wake = true;
@@ -438,6 +453,7 @@ namespace BCA_MakingAnIA
             wplayer.URL = @"C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\Commands\Ordinateur.mp3";
             wplayer.controls.play();
         }
+        // Création et gérer le mot de passe [OFF]
         public void mdp(object sender, SpeechRecognizedEventArgs e)
         {
             String r = e.Result.Text;
