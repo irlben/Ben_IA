@@ -3,7 +3,7 @@
 Cette application est une application dites 'IA'.
 Cette application contient une voix qui répond a vos attentes tels que demander l'heure.
 
-Pour l'activer, dites "Ordinateur".
+Pour l'activer, dites "Billy" ou "Bilou".
 Puis demander votre question.
 
 Les demandes seront énoncés dans un documents.
