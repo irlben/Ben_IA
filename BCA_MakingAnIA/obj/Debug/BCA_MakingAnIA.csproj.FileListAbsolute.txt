@@ -9,7 +9,13 @@ C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnI
 C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\obj\Debug\Interop.WMPLib.dll
 C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\obj\Debug\BCA_MakingAnIA.csproj.ResolveComReference.cache
 C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\bin\Debug\Newtonsoft.Json.pdb
 C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\obj\Debug\BCA_MakingAnIA.FrmConsole.resources
 C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\obj\Debug\BCA_MakingAnIA.FrmPrincipal.resources
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\bin\Debug\Google.Apis.Core.dll
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\bin\Debug\Google.Apis.dll
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\bin\Debug\Google.Apis.pdb
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\bin\Debug\Google.Apis.xml
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\bin\Debug\Google.Apis.Core.pdb
+C:\Users\Proprietaire\Documents\Projet_Perso\PROJET\BCA_MakingAnIA\BCA_MakingAnIA\bin\Debug\Google.Apis.Core.xml

@@ -24,7 +24,6 @@ namespace BCA_MakingAnIA
     {
         #region Description des objets
         SpeechSynthesizer s = new SpeechSynthesizer();
-        
         Boolean wake = false;
         Choices list = new Choices();
         const string APPID = "14c4be5ed015bf3b8fb3886a0dcb724d"; 
@@ -56,7 +55,8 @@ namespace BCA_MakingAnIA
             
             // Ajout d'une nouvelle grammaire
             Grammar gr = new Grammar(new GrammarBuilder(list));
-           
+            s.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Adult);
+            s.Speak("Attendez quelques secondes, ça arrive");
 
             try
             {
@@ -65,6 +65,7 @@ namespace BCA_MakingAnIA
                 rec.SpeechRecognized += rec_SpeachRecognized;
                 rec.SetInputToDefaultAudioDevice();
                 rec.RecognizeAsync(RecognizeMode.Multiple);
+               
             } catch (Exception)
             {
                 MessageBox.Show("Erreur", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -72,8 +73,7 @@ namespace BCA_MakingAnIA
 
 
 
-            s.SelectVoiceByHints(VoiceGender.Neutral);
-            s.Speak("Attendez quelques secondes, ça arrive");
+           
             
             InitializeComponent();
         }
@@ -215,7 +215,7 @@ namespace BCA_MakingAnIA
             
             
             #region TEST, appel pour ouvrir discussion 
-            if (r == "Ordinateur" || r == "nateur" || r == "Ordi")
+            if (r == "Billy" || r == "Bill" || r == "Bilou")
             {
                 
                 wake = true;
@@ -427,8 +427,13 @@ namespace BCA_MakingAnIA
                     FrmConsole.ActiveForm.Close();
                     end(r);
                 }
+                // Ouvre Deezer
+                if (r == "Deezer")
+                {
+                    OpenAppli("Deezer.exe");
+                }
                 // Donner les informations que peut faire L'IA
-                if (r == "Que puis-je faire ?")
+                if (r == "Que puis je te demander")
                 {
                     say("Vous pouvez me demander d'ouvrir une application tel que Google Chrome");
                     say("Ou bien de me demander l'heure");
